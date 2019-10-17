@@ -1,0 +1,238 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header {
+  padding: 156px 0 100px;
+}
+
+.js-scroll-trigger {
+  cursor: pointer;
+}
+
+.heading-primary {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 10px;
+  animation: moveInLeft 1.5s ease-out;
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 15px;
+  animation: moveInRight 1.5s ease-out;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  position: relative;
+  transition: all 0.75s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+  z-index: -1;
+  transition: all 0.75s;
+}
+
+.btn--white {
+  color: #777777;
+  background-color: #fff;
+}
+
+.btn--white::after {
+  background-color: #fff;
+}
+
+.btn--animated {
+  animation: moveInBottom 0.75s ease-out 1s;
+  animation-fill-mode: backwards;
+}
+
+.btn--linear {
+  width: 100%;
+  margin: auto;
+  color: #fff;
+  background-image: linear-gradient(to right, #8e9efc, #1c3eff);
+  border: none;
+  transition: all 0.8s;
+}
+
+section {
+  padding: 150px 0;
+}
+
+.section__heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: 1rem;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #8e9efc, #1c3eff);
+  color: transparent;
+  -webkit-background-clip: text;
+  transition: all 0.2s;
+}
+
+.section__heading:hover {
+  transform: skewY(5deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  overflow: hidden;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: all 0.8s;
+}
+.card:hover img {
+  transform: scale(1.5) translateY(-20px);
+}
+
+.btn--linear:hover {
+  background-image: none;
+  background-color: #1c3eff;
+}
+
+.btn-text {
+  transition: all 0.2s;
+}
+
+.btn-text:link,
+.btn-text:visited {
+  color: #5a73fc;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #5a73fc;
+  padding: 0.3rem;
+}
+.btn-text:hover {
+  background-color: #5a73fc;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translate(-0.2rem);
+}
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0);
+}
+
+.contact__list {
+  list-style-type: none;
+}
+
+.contact__list li {
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.contact__list--label {
+  font-weight: bold;
+}
+
+.contact__list--icon {
+  transition: all 0.8s;
+}
+
+.contact__list li:hover .contact__list--icon {
+  font-size: 150%;
+}
+
+.form-control {
+  height: 50px;
+  background: rgba(255, 255, 255, 0.6);
+  border-color: transparent;
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #000 !important;
+  border-right: none !important;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #243c4f;
+}
+.btn--submit {
+  min-height: 50px;
+  border-radius: 0 20px 20px 0;
+  border: none;
+  background: #243c4f;
+  color: #fff;
+  transition: all .8s;
+  cursor: pointer;
+}
+.btn--submit:hover {
+  transform: translateY(0);
+}
