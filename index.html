@@ -1,19 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>HomePage</title>
+    <title>Web Design Basic Courses</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script> -->
+    <link rel="icon" href="img/logo.png">
+    <!-- Boostrap CSS 4.3.1 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
 </head>
 
-<body>
-    <div class="demo">
-        <p class="demo__instruction">This is example of my page.</p>
-    </div>
+<body id="top">
+    <!-- Header -->
+    <header class="bg-primary text-white">
+        <nav class="navbar navbar-expand-lg pl-5 pr-5 navbar-dark fixed-top bg-dark" id="mainNav">
+            <a class="navbar-brand js-scroll-trigger" href="#top">Web Design Basic</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container text-center">
+            <div class="heading-primary">
+                <h1 class="heading-primary--main">Welcome to Web Design Basic</h1>
+                <p class="lead heading-primary--sub">Learn now to become a web developer</p>
+            </div>
+            <a class="nav-link js-scroll-trigger btn btn--white btn--animated" href="#contact">Sign up
+                now</a>
+        </div>
+    </header>
+    <!-- About section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section__heading">About</h2>
+                    <p class="lead">This is an online course of Michigan University in Coursera. I have learned this for
+                        two months.
+                        And this webiste is my final project. After finish your course, you can:</p>
+                    <ul>
+                        <li>Create your own website, like your blog</li>
+                        <li>How to use framework for web designing (using Bootstrap)</li>
+                        <li>Know how a website work, from domain to hosting</li>
+                        <li>And more than this...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Courses section -->
+    <section id="courses" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section__heading">Courses</h2>
+                    <p class="lead">This course have five main parts. Here is three basic part you will learn first. To
+                        see full course, please <a href="https://www.coursera.org/specializations/web-design"
+                            target="_blank" class="btn-text">click here</a>.</p>
+                    <div class="row">
+                        <div class="col-lg-4 p-2">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="/img/html5.png" alt="html5_logo">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">HTML5</h5>
+                                    <p class="card-text">How to buid main parts of website using tags.</p>
+                                    <a href="https://www.coursera.org/learn/html"
+                                        class="btn btn-primary btn--linear">See now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-2">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="/img/css3.png" alt="css3_logo">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">CSS3</h5>
+                                    <p class="card-text">How to make your webiste more attractive.</p>
+                                    <a href="https://www.coursera.org/learn/introcss"
+                                        class="btn btn-primary btn--linear">See
+                                        now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-2">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="/img/javascript.png" alt="javascript_logo">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">JavaScript</h5>
+                                    <p class="card-text">How to control events on website you want.</p>
+                                    <a href="https://www.coursera.org/learn/javascript"
+                                        class="btn btn-primary btn--linear">See
+                                        now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section__heading">Contact</h2>
+                    <p class="lead">To get more informations about this course, please contact us by one of three way
+                        below:</p>
+                    <ul class="contact__list">
+                        <li><i class="fas fa-envelope text-primary contact__list--icon"></i> <span
+                                class="contact__list--label"> Email:
+                            </span><a>tthinh2128@gmail.com</a></li>
+                        <li><i class="fab fa-facebook-square text-primary contact__list--icon"></i> <span
+                                class="contact__list--label">
+                                Facebook: </span><a target="_blank"
+                                href="https://www.facebook.com/thinhtpt.2000">ThinhTPT</a>
+                        <li><i class="fas fa-phone text-primary contact__list--icon"></i><span
+                                class="contact__list--label"> Phone:
+                            </span>0378 - xxx - xxx</li>
+                        <li><i class="fas fa-map-marker-alt text-primary contact__list--icon"></i><span
+                                class="contact__list--label"> Address: </span>High-tech Park, District 9, HCM
+                            City</li>
+                    </ul>
+                    <p class="lead">Or you can get mores news by subscribe your email address:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <form action="#" id="subscribe">
+                        <div class="input-group mb-2 mr-sm-2">
+                            <input type="email" class="form-control" placeholder="Enter your email" name="email"
+                                required autocomplete="off">
+                            <button type="submit" class="btn btn-primary btn--submit mb-2">Subscribe</button>
+                        </div>
+                    </form>
+                    <span class="text-success">&nbsp;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; 2019 <a target="_blank"
+                    href="https://github.com/thinhtpt2000">ThinhTPT</a></p>
+        </div>
+    </footer>
+    <!-- JS for Bootstrap 4 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/handle-submit.js"></script>
 </body>
 
 </html>
