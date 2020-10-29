@@ -1,0 +1,8 @@
+.ctr,
+#page-cv {
+  margin: 0 auto;
+  max-width: 790px;
+  overflow: hidden;
+  position: relative;
+}
+
