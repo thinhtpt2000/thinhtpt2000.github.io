@@ -1,0 +1,38 @@
+.blog-hd {
+  background-color: #878787;
+}
+
+#form-cv {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0 !important;
+}
+
+.icoweb span {
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
+}
+
+.wfa i {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding-inline-start: 16px;
+}
+
+.exp-content ul {
+  list-style: none;
+  text-align: justify;
+}
+
+.exp-content ul li a {
+  text-decoration: none !important;
+  color: initial !important;
+}

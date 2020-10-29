@@ -1,0 +1,21 @@
+#cv-top {
+  background: #00796b !important;
+}
+h3,
+.head {
+  color: #00796b !important;
+}
+#form-cv .wfa {
+  color: #00796b !important;
+  border: 2px solid #00796b !important;
+}
+#cv-content h3 {
+  color: #00796b !important;
+}
+#cv-main,
+#cv-content {
+  background: url(../../img/line.png) 192px top repeat-y !important;
+}
+.bar-exp div {
+  background: #00796b !important;
+}
