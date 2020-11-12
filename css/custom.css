@@ -44,14 +44,14 @@ ul {
   @page {
     size: A4; /* DIN A4 standard, Europe */
     /* margin: 10mm; */
-    margin: 0;
+    margin: 10mm;
     /* margin-top: 10mm;
     margin-bottom: 10mm; */
   }
-  
+/*   
   @page :first {
     margin-top: 10mm; 
-  }
+  } */
 
   .cvo-block {
     margin-bottom: 25px;
