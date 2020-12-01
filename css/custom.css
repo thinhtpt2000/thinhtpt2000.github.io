@@ -2,6 +2,10 @@
   background-color: #878787;
 }
 
+#cv-top {
+  margin-left: -1px;
+}
+
 #box-hvt > h2 {
   margin-top: 15px;
 }
